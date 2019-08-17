@@ -58,7 +58,7 @@ export default {
     display: flex;
     flex-direction: column;
     position: relative;
-    height: 100%;
+    height: 100vh;
     overflow: hidden;
   }
   .head {
@@ -82,10 +82,8 @@ export default {
   }
   #bd {
     flex-grow: 1;
-    overflow-y: scroll;
+    overflow-y: auto;
     -webkit-overflow-scrolling: touch;
-    &::-webkit-scrollbar {
-      display: none;
-    }
+
   }
 </style>
